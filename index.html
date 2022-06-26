@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <form id="questionsForm" class="todo__form"></form>
+
+        <p id="trueAnswer"></p>
+        
+        <button form="questionsForm" type="submit">Check</button>
+      </div>
+    </main>
+
+    <!-- template -->
+
+    <template id="question-template">
+      <h1 class="question"></h1>
+    </template>
+
+    <template id="answer-template">
+      <label class="label">
+        <input class="input" type="radio" required />
+        <span class="answer"></span>
+      </label>
+    </template>
+
+    <script src="js/questions.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
